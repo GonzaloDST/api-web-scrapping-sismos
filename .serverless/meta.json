@@ -43,7 +43,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-us-east-1-269ce005-8016",
-                  "S3Key": "serverless/api-web-scraping/dev/1763883016383-2025-11-23T07:30:16.383Z/api-web-scraping.zip"
+                  "S3Key": "serverless/api-web-scraping/dev/1763883266357-2025-11-23T07:34:26.357Z/api-web-scraping.zip"
                 },
                 "Handler": "handlers/scrape_earthquakes.lambda_handler",
                 "Runtime": "python3.12",
@@ -68,7 +68,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-us-east-1-269ce005-8016",
-                  "S3Key": "serverless/api-web-scraping/dev/1763883016383-2025-11-23T07:30:16.383Z/api-web-scraping.zip"
+                  "S3Key": "serverless/api-web-scraping/dev/1763883266357-2025-11-23T07:34:26.357Z/api-web-scraping.zip"
                 },
                 "Handler": "handlers/get_earthquakes.lambda_handler",
                 "Runtime": "python3.12",
@@ -88,24 +88,24 @@
                 "GetUnderscoreearthquakesLogGroup"
               ]
             },
-            "ScrapeUnderscoreearthquakesLambdaVersionOxfLknza7kzMu5CteqMP5lDiaj2FuEm5XisQMC8J2k": {
+            "ScrapeUnderscoreearthquakesLambdaVersionqUU68RzG5ABqhSFoshVMx5Cbx40XFRhbg0Vu2txjqE": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "ScrapeUnderscoreearthquakesLambdaFunction"
                 },
-                "CodeSha256": "FmrxisyziM2tAvT6iwhiPkqqhndi0rOoiDSGzY7x83M="
+                "CodeSha256": "CyaP7B3WjpWAwYo4Kfu0Z7d+1fWoXyjoJZ7WRWmYpd4="
               }
             },
-            "GetUnderscoreearthquakesLambdaVersionXfu1XV3S6YrFkyd6ctpVaHjRRzPx0ifF1SdP0rhO2Q": {
+            "GetUnderscoreearthquakesLambdaVersionXUdjAQ4kHdcdp57LgXBTj0vDNKL9hsBNuqnnAEF4m4": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "GetUnderscoreearthquakesLambdaFunction"
                 },
-                "CodeSha256": "FmrxisyziM2tAvT6iwhiPkqqhndi0rOoiDSGzY7x83M="
+                "CodeSha256": "CyaP7B3WjpWAwYo4Kfu0Z7d+1fWoXyjoJZ7WRWmYpd4="
               }
             },
             "ApiGatewayRestApi": {
@@ -615,7 +615,7 @@
                 "GetUnderscoreearthquakesLambdaPermissionApiGateway"
               ]
             },
-            "ApiGatewayDeployment1763882933414": {
+            "ApiGatewayDeployment1763883246403": {
               "Type": "AWS::ApiGateway::Deployment",
               "Properties": {
                 "RestApiId": {
@@ -752,7 +752,7 @@
             "ScrapeUnderscoreearthquakesLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "ScrapeUnderscoreearthquakesLambdaVersionOxfLknza7kzMu5CteqMP5lDiaj2FuEm5XisQMC8J2k"
+                "Ref": "ScrapeUnderscoreearthquakesLambdaVersionqUU68RzG5ABqhSFoshVMx5Cbx40XFRhbg0Vu2txjqE"
               },
               "Export": {
                 "Name": "sls-api-web-scraping-dev-ScrapeUnderscoreearthquakesLambdaFunctionQualifiedArn"
@@ -761,7 +761,7 @@
             "GetUnderscoreearthquakesLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GetUnderscoreearthquakesLambdaVersionXfu1XV3S6YrFkyd6ctpVaHjRRzPx0ifF1SdP0rhO2Q"
+                "Ref": "GetUnderscoreearthquakesLambdaVersionXUdjAQ4kHdcdp57LgXBTj0vDNKL9hsBNuqnnAEF4m4"
               },
               "Export": {
                 "Name": "sls-api-web-scraping-dev-GetUnderscoreearthquakesLambdaFunctionQualifiedArn"
@@ -876,7 +876,7 @@
           "timeout": 30,
           "runtime": "python3.12",
           "vpc": {},
-          "versionLogicalId": "ScrapeUnderscoreearthquakesLambdaVersionOxfLknza7kzMu5CteqMP5lDiaj2FuEm5XisQMC8J2k"
+          "versionLogicalId": "ScrapeUnderscoreearthquakesLambdaVersionqUU68RzG5ABqhSFoshVMx5Cbx40XFRhbg0Vu2txjqE"
         },
         "get_earthquakes": {
           "handler": "handlers/get_earthquakes.lambda_handler",
@@ -946,7 +946,7 @@
           "timeout": 30,
           "runtime": "python3.12",
           "vpc": {},
-          "versionLogicalId": "GetUnderscoreearthquakesLambdaVersionXfu1XV3S6YrFkyd6ctpVaHjRRzPx0ifF1SdP0rhO2Q"
+          "versionLogicalId": "GetUnderscoreearthquakesLambdaVersionXUdjAQ4kHdcdp57LgXBTj0vDNKL9hsBNuqnnAEF4m4"
         }
       },
       "resources": {
@@ -1029,7 +1029,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-269ce005-8016",
-                "S3Key": "serverless/api-web-scraping/dev/1763883016383-2025-11-23T07:30:16.383Z/api-web-scraping.zip"
+                "S3Key": "serverless/api-web-scraping/dev/1763883266357-2025-11-23T07:34:26.357Z/api-web-scraping.zip"
               },
               "Handler": "handlers/scrape_earthquakes.lambda_handler",
               "Runtime": "python3.12",
@@ -1054,7 +1054,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-us-east-1-269ce005-8016",
-                "S3Key": "serverless/api-web-scraping/dev/1763883016383-2025-11-23T07:30:16.383Z/api-web-scraping.zip"
+                "S3Key": "serverless/api-web-scraping/dev/1763883266357-2025-11-23T07:34:26.357Z/api-web-scraping.zip"
               },
               "Handler": "handlers/get_earthquakes.lambda_handler",
               "Runtime": "python3.12",
@@ -1074,24 +1074,24 @@
               "GetUnderscoreearthquakesLogGroup"
             ]
           },
-          "ScrapeUnderscoreearthquakesLambdaVersionOxfLknza7kzMu5CteqMP5lDiaj2FuEm5XisQMC8J2k": {
+          "ScrapeUnderscoreearthquakesLambdaVersionqUU68RzG5ABqhSFoshVMx5Cbx40XFRhbg0Vu2txjqE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ScrapeUnderscoreearthquakesLambdaFunction"
               },
-              "CodeSha256": "FmrxisyziM2tAvT6iwhiPkqqhndi0rOoiDSGzY7x83M="
+              "CodeSha256": "CyaP7B3WjpWAwYo4Kfu0Z7d+1fWoXyjoJZ7WRWmYpd4="
             }
           },
-          "GetUnderscoreearthquakesLambdaVersionXfu1XV3S6YrFkyd6ctpVaHjRRzPx0ifF1SdP0rhO2Q": {
+          "GetUnderscoreearthquakesLambdaVersionXUdjAQ4kHdcdp57LgXBTj0vDNKL9hsBNuqnnAEF4m4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetUnderscoreearthquakesLambdaFunction"
               },
-              "CodeSha256": "FmrxisyziM2tAvT6iwhiPkqqhndi0rOoiDSGzY7x83M="
+              "CodeSha256": "CyaP7B3WjpWAwYo4Kfu0Z7d+1fWoXyjoJZ7WRWmYpd4="
             }
           },
           "ApiGatewayRestApi": {
@@ -1601,7 +1601,7 @@
               "GetUnderscoreearthquakesLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1763882933414": {
+          "ApiGatewayDeployment1763883246403": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -1738,7 +1738,7 @@
           "ScrapeUnderscoreearthquakesLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ScrapeUnderscoreearthquakesLambdaVersionOxfLknza7kzMu5CteqMP5lDiaj2FuEm5XisQMC8J2k"
+              "Ref": "ScrapeUnderscoreearthquakesLambdaVersionqUU68RzG5ABqhSFoshVMx5Cbx40XFRhbg0Vu2txjqE"
             },
             "Export": {
               "Name": "sls-api-web-scraping-dev-ScrapeUnderscoreearthquakesLambdaFunctionQualifiedArn"
@@ -1747,7 +1747,7 @@
           "GetUnderscoreearthquakesLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetUnderscoreearthquakesLambdaVersionXfu1XV3S6YrFkyd6ctpVaHjRRzPx0ifF1SdP0rhO2Q"
+              "Ref": "GetUnderscoreearthquakesLambdaVersionXUdjAQ4kHdcdp57LgXBTj0vDNKL9hsBNuqnnAEF4m4"
             },
             "Export": {
               "Name": "sls-api-web-scraping-dev-GetUnderscoreearthquakesLambdaFunctionQualifiedArn"
@@ -1805,18 +1805,18 @@
     "serviceProviderAwsCfStackName": "api-web-scraping-dev",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:us-east-1:372738539467:stack/api-web-scraping-dev/5e8a2f40-c83d-11f0-93d7-0affcd5b5ec5",
     "serviceProviderAwsCfStackCreated": "2025-11-23T07:23:55.479Z",
-    "serviceProviderAwsCfStackUpdated": null,
-    "serviceProviderAwsCfStackStatus": "CREATE_COMPLETE",
+    "serviceProviderAwsCfStackUpdated": "2025-11-23T07:30:19.450Z",
+    "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "GetUnderscoreearthquakesLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:us-east-1:372738539467:function:api-web-scraping-dev-get_earthquakes:1",
+        "OutputValue": "arn:aws:lambda:us-east-1:372738539467:function:api-web-scraping-dev-get_earthquakes:2",
         "Description": "Current Lambda function version",
         "ExportName": "sls-api-web-scraping-dev-GetUnderscoreearthquakesLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "ScrapeUnderscoreearthquakesLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:us-east-1:372738539467:function:api-web-scraping-dev-scrape_earthquakes:1",
+        "OutputValue": "arn:aws:lambda:us-east-1:372738539467:function:api-web-scraping-dev-scrape_earthquakes:2",
         "Description": "Current Lambda function version",
         "ExportName": "sls-api-web-scraping-dev-ScrapeUnderscoreearthquakesLambdaFunctionQualifiedArn"
       },
@@ -1853,7 +1853,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-us-east-1-269ce005-8016",
-              "S3Key": "serverless/api-web-scraping/dev/1763883016383-2025-11-23T07:30:16.383Z/api-web-scraping.zip"
+              "S3Key": "serverless/api-web-scraping/dev/1763883266357-2025-11-23T07:34:26.357Z/api-web-scraping.zip"
             },
             "Handler": "handlers/scrape_earthquakes.lambda_handler",
             "Runtime": "python3.12",
@@ -1878,7 +1878,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-us-east-1-269ce005-8016",
-              "S3Key": "serverless/api-web-scraping/dev/1763883016383-2025-11-23T07:30:16.383Z/api-web-scraping.zip"
+              "S3Key": "serverless/api-web-scraping/dev/1763883266357-2025-11-23T07:34:26.357Z/api-web-scraping.zip"
             },
             "Handler": "handlers/get_earthquakes.lambda_handler",
             "Runtime": "python3.12",
@@ -1898,24 +1898,24 @@
             "GetUnderscoreearthquakesLogGroup"
           ]
         },
-        "ScrapeUnderscoreearthquakesLambdaVersionOxfLknza7kzMu5CteqMP5lDiaj2FuEm5XisQMC8J2k": {
+        "ScrapeUnderscoreearthquakesLambdaVersionqUU68RzG5ABqhSFoshVMx5Cbx40XFRhbg0Vu2txjqE": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "ScrapeUnderscoreearthquakesLambdaFunction"
             },
-            "CodeSha256": "FmrxisyziM2tAvT6iwhiPkqqhndi0rOoiDSGzY7x83M="
+            "CodeSha256": "CyaP7B3WjpWAwYo4Kfu0Z7d+1fWoXyjoJZ7WRWmYpd4="
           }
         },
-        "GetUnderscoreearthquakesLambdaVersionXfu1XV3S6YrFkyd6ctpVaHjRRzPx0ifF1SdP0rhO2Q": {
+        "GetUnderscoreearthquakesLambdaVersionXUdjAQ4kHdcdp57LgXBTj0vDNKL9hsBNuqnnAEF4m4": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "GetUnderscoreearthquakesLambdaFunction"
             },
-            "CodeSha256": "FmrxisyziM2tAvT6iwhiPkqqhndi0rOoiDSGzY7x83M="
+            "CodeSha256": "CyaP7B3WjpWAwYo4Kfu0Z7d+1fWoXyjoJZ7WRWmYpd4="
           }
         },
         "ApiGatewayRestApi": {
@@ -2425,7 +2425,7 @@
             "GetUnderscoreearthquakesLambdaPermissionApiGateway"
           ]
         },
-        "ApiGatewayDeployment1763882933414": {
+        "ApiGatewayDeployment1763883246403": {
           "Type": "AWS::ApiGateway::Deployment",
           "Properties": {
             "RestApiId": {
@@ -2562,7 +2562,7 @@
         "ScrapeUnderscoreearthquakesLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "ScrapeUnderscoreearthquakesLambdaVersionOxfLknza7kzMu5CteqMP5lDiaj2FuEm5XisQMC8J2k"
+            "Ref": "ScrapeUnderscoreearthquakesLambdaVersionqUU68RzG5ABqhSFoshVMx5Cbx40XFRhbg0Vu2txjqE"
           },
           "Export": {
             "Name": "sls-api-web-scraping-dev-ScrapeUnderscoreearthquakesLambdaFunctionQualifiedArn"
@@ -2571,7 +2571,7 @@
         "GetUnderscoreearthquakesLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GetUnderscoreearthquakesLambdaVersionXfu1XV3S6YrFkyd6ctpVaHjRRzPx0ifF1SdP0rhO2Q"
+            "Ref": "GetUnderscoreearthquakesLambdaVersionXUdjAQ4kHdcdp57LgXBTj0vDNKL9hsBNuqnnAEF4m4"
           },
           "Export": {
             "Name": "sls-api-web-scraping-dev-GetUnderscoreearthquakesLambdaFunctionQualifiedArn"
