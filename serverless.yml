@@ -12,12 +12,18 @@ provider:
   environment:
     EARTHQUAKES_TABLE: !Ref TablaEarthquakes
 
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+    slim: true
+    strip: false
+
 functions:
   scrape_earthquakes:
     handler: handlers/scrape_earthquakes.lambda_handler
-    package:
-      include:
-        - ./**
     events:
       - http:
           path: /earthquakes/scrape
@@ -27,9 +33,6 @@ functions:
   
   get_earthquakes:
     handler: handlers/get_earthquakes.lambda_handler
-    package:
-      include:
-        - ./**
     events:
       - http:
           path: /earthquakes
